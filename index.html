@@ -316,10 +316,10 @@ document.onkeydown = function(e)
 		case 39:// 右
 			if( checkMove(  1, 0 ) )tetro_x++;
 			break;
-		case 40:// 下
+		case 13:// 下
 			if( checkMove(  0, 1 ) )tetro_y++;
 			break;
-		case 32:// スペース
+		case 70:// スペース
 			let ntetro = rotate();
 			if( checkMove( 0, 0, ntetro) ) tetro = ntetro;
 			break;
@@ -329,5 +329,9 @@ document.onkeydown = function(e)
 }
 
 </script>
+<h2>操作方法</h2>
+<p>←で左<BR>→で右<BR>Enterキーで下<BR>"F"キーで回転<BR>スマホ非対応</p>
 </body>
 </html>
+
+	
